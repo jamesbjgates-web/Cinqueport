@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Cinque Port — independent commercial intelligence and evidence verification. A division of Pavilion (Stockport) Ltd.">
 <title>Cinque Port — Know before you commit.</title>
-<link rel="stylesheet" href="styles.css?v=4">
+<link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
 <header class="masthead">
@@ -85,15 +85,49 @@
 </section>
 
 <section id="contact" class="contact-section">
-  <div class="shell contact-layout">
-    <div><p class="kicker">Correspondence</p><h2>Speak with Cinque Port.</h2></div>
-    <div class="contact-copy"><p>For commercial enquiries and research conversations.</p><a href="mailto:hello@cinqueport.net">hello@cinqueport.net</a><a href="mailto:james@cinqueport.net">james@cinqueport.net</a><p class="small-note">United Kingdom</p></div>
+  <div class="shell contact-layout contact-layout-form">
+    <div class="contact-intro">
+      <p class="kicker">Contact Cinque Port</p>
+      <h2>What do you need to establish?</h2>
+      <p>Tell us what decision is being held up, what is uncertain, and what you need to know before you can proceed.</p>
+      <p class="small-note">Please do not send confidential transaction documents through this form. Give us a brief outline first and we can arrange an appropriate way to receive supporting information if required.</p>
+      <div class="direct-contact">
+        <span>General enquiries</span>
+        <a href="mailto:hello@cinqueport.net">hello@cinqueport.net</a>
+      </div>
+    </div>
+    <form class="cp-form" action="/contact-handler.php" method="post">
+      <label>Your name<input name="name" required></label>
+      <label>Company<input name="company"></label>
+      <label>Email<input type="email" name="email" required></label>
+      <label>Telephone <span>(optional)</span><input type="tel" name="telephone"></label>
+      <label class="full">Nature of enquiry
+        <select name="interest">
+          <option>Commercial intelligence or evidence research</option>
+          <option>Verification of a commercial claim</option>
+          <option>Receivable or transaction verification</option>
+          <option>Counterparty, authority or identity checks</option>
+          <option>Research conversation</option>
+          <option>Something else / Not sure</option>
+        </select>
+      </label>
+      <label class="full">What do you need to establish?<textarea name="message" required></textarea></label>
+      <label class="full check"><input type="checkbox" name="urgent" value="yes"> This matter has a deadline or requires urgent attention</label>
+      <label>Relevant date / deadline<input type="date" name="deadline"></label>
+      <div></div>
+      <button class="form-button" type="submit">Send enquiry →</button>
+    </form>
+  </div>
+  <div class="shell next-steps">
+    <div><span>01</span><h3>Tell us what is uncertain</h3><p>Give us the commercial context and the factual question that needs answering.</p></div>
+    <div><span>02</span><h3>We establish the scope</h3><p>We will tell you whether Cinque Port is the right place to help and what evidence would be required.</p></div>
+    <div><span>03</span><h3>Know the next step</h3><p>If we can assist, we will explain the proposed approach and commercial terms before chargeable work begins.</p></div>
   </div>
 </section>
 </main>
 
 <footer><div class="shell footer-inner"><div><b>CINQUE PORT</b><span>Know before you commit.</span></div><div><a href="https://pspt.ltd/" rel="noopener">Pavilion (Stockport) Ltd</a><a href="privacy.html">Privacy</a><span>© <span id="year"></span> Pavilion (Stockport) Ltd</span></div></div><div class="shell corporate-note">Cinque Port is a trading name and specialist division of Pavilion (Stockport) Ltd · Registered in England and Wales · Company No. 14997067 · Registered office: Onward Chambers, 34 Market Street, Hyde, England, SK14 1AH</div></footer>
-<script src="script.js?v=4"></script>
-<!-- CINQUE PORT BUILD 4 · PAVILION DIVISION -->
+<script src="script.js?v=5"></script>
+<!-- CINQUE PORT BUILD 5 · PAVILION DIVISION -->
 </body>
 </html>
