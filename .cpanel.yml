@@ -6,3 +6,5 @@ deployment:
     - /bin/cp privacy.html $DEPLOYPATH
     - /bin/cp styles.css $DEPLOYPATH
     - /bin/cp script.js $DEPLOYPATH
+    - /bin/cp contact-handler.php $DEPLOYPATH
+    - /bin/cp thank-you.html $DEPLOYPATH
